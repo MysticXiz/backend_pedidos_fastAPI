@@ -1,0 +1,123 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+
+# Environment / secrets
+.env
+.env.* 
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checking / linters cache
+.mypy_cache/
+.ruff_cache/
+
+# Database / migrations artifacts (não ignorar alembic/versions/ se quiser versionar migrações)
+*.sqlite3
+*.db
+*.db-journal
+instance/
+data/
+alembic/*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.bak
+*.swp
+*.tmp
+
+# Packaging
+*.whl
+```// filepath: c:\Coding\projeto pedidos\.gitignore
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+
+# Environment / secrets
+.env
+.env.* 
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checking / linters cache
+.mypy_cache/
+.ruff_cache/
+
+# Database / migrations artifacts (não ignorar alembic/versions/ se quiser versionar migrações)
+*.sqlite3
+*.db
+*.db-journal
+instance/
+data/
+alembic/*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.bak
+*.swp
+*.tmp
+
+# Packaging
+*.whl
