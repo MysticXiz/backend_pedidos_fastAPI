@@ -50,7 +50,6 @@ Autenticação e segurança
 - Boas práticas recomendadas:
   - Secrets (SECRET_KEY) e DATABASE_URL via .env.
   - Em produção, usar HTTPS e rotacionar SECRET_KEY periodicamente.
-  - Em deploy, prefira psycopg2 (ou psycopg2-binary para dev) se usar PostgreSQL.
 
 Validação de e-mail e senha
 - Email: Pydantic EmailStr usado nos schemas; email-validator presente para normalizar/validar. O projeto também fornece validação explícita via email_validator no endpoint para retornar 400 com mensagem clara.
@@ -95,11 +94,9 @@ Dependências relevantes (resumo)
 - python-jose[cryptography] — encode/decode JWT
 - passlib[argon2] — Argon2 hashing
 - email-validator — requerido por EmailStr
-- psycopg2-binary — driver PostgreSQL (para desenvolvimento); em produção prefira psycopg2
 
 Observações de desenvolvimento
 - Testes: adicione pytest + pytest-asyncio para testes assíncronos das rotas.
-- Lint/format: usar flake8 / ruff / black conforme preferência.
 - Segurança: rever políticas CORS, rate limiting e proteção contra brute-force (ex.: limitar tentativas de login).
 - Dados sensíveis: manter .env fora do repositório e usar secrets manager em produção.
 
@@ -107,9 +104,4 @@ Contribuição
 - Abrir PRs para features e correções; seguir a mesma formatação de commits e rodar testes localmente antes de submeter.
 
 Licença
-- Adicionar arquivo LICENSE na raiz conforme desejar (MIT/Apache2 etc.).
-
-Contato / próximos passos
-- Revisar schemas e incluir validação de força de senha no Pydantic.
-- Adicionar testes unitários para auth e endpoints críticos.
-- Configurar CI (lint, testes, build de imagem) se for usar deployment automatizado.
+- MIT
